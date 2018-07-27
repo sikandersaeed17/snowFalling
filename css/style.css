@@ -1,0 +1,66 @@
+#screen{
+    position: relative;
+    width: 100%;
+    background: url(../images/Screen1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 550px;
+    overflow: hidden;
+}
+#snow1{
+    background: url(../images/Snow-2.png);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    mix-blend-mode: screen;
+    animation: snow1 15s linear 0s infinite;
+    filter: blur(1px);
+}
+#snow2{
+    background: url(../images/Snow-2.png);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    mix-blend-mode: screen;
+    animation: snow2 15s linear 0s infinite;
+    filter: blur(5px);
+}
+#snow3{
+    background: url(../images/Snow-2.png);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    mix-blend-mode: screen;
+    animation: snow3 15s linear 0s infinite;
+    filter: blur(3px);
+}
+@keyframes snow1{
+    0%{
+        background-position: 0px 0px;
+    }
+    100%{
+        background-position: 1920px 1080px;
+    }
+}
+@keyframes snow2{
+    0%{
+        background-position: 0px -100px;
+    }
+    100%{
+        background-position: 1920px 980px;
+    }
+}
+@keyframes snow3{
+    0%{
+        background-position: 1920px 0px;
+    }
+    100%{
+        background-position: 0px 1080px;
+    }
+}
